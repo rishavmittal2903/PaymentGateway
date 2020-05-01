@@ -3,8 +3,9 @@ const router = express.Router()
 var Insta = require('instamojo-nodejs');
 const url=require('url');
 require('dotenv').config()
-console.log("process.env.API_KEY"+process.env.API_KEY);
-Insta.setKeys(process.env.API_KEY, process.env.AUTH_KEY);
+
+console.log("process.env.API_KEY ;"+(process.env.API_KEY));
+Insta.setKeys("c1160c3b8ea7b9e6a15f91f4935ba4de", "65a51243180093dcfcd3e7b7f241881c");
  
 //Create payment for user
 router.post('/createPayment', (req, res) => {
