@@ -4,6 +4,10 @@ var Insta = require('instamojo-nodejs');
 const url=require('url');
 require('dotenv').config()
 Insta.setKeys(process.env.API_KEY, process.env.AUTH_KEY);
+if(process.env.DEV)
+{
+  Insta.isSandboxMode(true);
+}
 //Create payment for user
 router.post('/createPayment', (req, res) => {
     var data = new Insta.PaymentData();
@@ -21,7 +25,14 @@ router.post('/createPayment', (req, res) => {
     
         } else {
           // Payment redirection link at response.payment_request.longurl
-          res.send(JSON.parse(response).payment_request.longurl);
+          if(JSON.parse(response).success)
+          {
+            res.send(JSON.parse(response).payment_request.longurl);
+          }
+          else
+          {
+            res.send(JSON.parse(response));
+          }
         }
       });
     })

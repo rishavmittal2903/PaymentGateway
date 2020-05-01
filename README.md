@@ -12,6 +12,10 @@ Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
+### `http://localhost:8080`
+
+Swagger documentation will open to use all payment api's
+
 ### `http://localhost:8080/paymentGateway/createPayment`
 
 Api to create payment link and return the payment url to make payment from different mode (Credit Card, Debit Card, Net Banking, PhonePe, GooglePay, Bhim UPI, Paytm) with accepting following parameters
@@ -81,11 +85,6 @@ Api which called once payment link got generated. Treat as redirect url and retu
 Method Type: Get
 Content-Type:Application/json
 Calling-method:http://localhost:8080/paymentGateway/callback
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Advanced Configuration
 During deployment set below enviroment variables. which will be valid for instamojo payment gateway
@@ -95,5 +94,5 @@ REDIRECT_URL={domain_namae}/PaymentGateway/Callback4
 
 ### Deployment
 
-This section has moved here: ttps://paymentgatewayapp.herokuapp.com/
+This section has moved here: https://paymentgatewayapp.herokuapp.com/
 
