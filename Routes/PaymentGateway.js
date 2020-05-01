@@ -4,6 +4,7 @@ var Insta = require('instamojo-nodejs');
 const url=require('url');
 require('dotenv').config()
 Insta.setKeys(process.env.API_KEY, process.env.AUTH_KEY);
+console.log(process.env.API_KEY,process.env.AUTH_KEY)
 if(process.env.DEV)
 {
   Insta.isSandboxMode(true);
@@ -25,6 +26,7 @@ router.post('/createPayment', (req, res) => {
     
         } else {
           // Payment redirection link at response.payment_request.longurl
+          console.log(JSON.parse(response));
           if(JSON.parse(response).success)
           {
             res.send(JSON.parse(response).payment_request.longurl);
