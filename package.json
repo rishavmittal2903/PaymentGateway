@@ -4,7 +4,7 @@
   "description": "Integration of instamojo payment gateway",
   "main": "Server.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "start": "nodemon server.js"
   },
   "author": "Rishav Mittal",
   "license": "ISC",
