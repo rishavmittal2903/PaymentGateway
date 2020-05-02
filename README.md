@@ -90,7 +90,7 @@ Calling-method:http://localhost:8080/paymentGateway/callback
 During deployment set below enviroment variables. which will be valid for instamojo payment gateway
 API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxx
 AUTH_KEY=xxxxxxxxxxxxxxxxxx
-REDIRECT_URL={domain_namae}/PaymentGateway/Callback4
+REDIRECT_URL={domain_namae}/PaymentGateway/Callback
 
 ### DEMO
 
