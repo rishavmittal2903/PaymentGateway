@@ -5,8 +5,9 @@ const url=require('url');
 require('dotenv').config()
 Insta.setKeys(process.env.API_KEY, process.env.AUTH_KEY);
 console.log(process.env.API_KEY,process.env.AUTH_KEY,process.env.DEV)
-if(process.env.DEV)
+if(process.env.DEV=="true")
 {
+  console.log("Test Mode is on");
   Insta.isSandboxMode(true);
 }
 //Create payment for user
