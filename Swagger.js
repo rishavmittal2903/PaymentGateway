@@ -244,7 +244,8 @@ module.exports={
           "amount",
           "phone",
           "email",
-          "buyer_name"
+          "buyer_name",
+          "redirecturl"
         ],
         "properties": {
           "purpose": {
@@ -266,6 +267,10 @@ module.exports={
           "buyer_name": {
             "type": "string",
             "example": "test"
+          },
+          "redirecturl": {
+            "type": "string",
+            "example": "test/test"
           }
         },
         "xml": {

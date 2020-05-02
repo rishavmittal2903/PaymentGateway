@@ -26,7 +26,8 @@ Parameters:{
 	"amount":xx,
 	"phone":"xxxxxxxxxx",
 	"email":"xxxx@xxx.com",
-	"buyer_name":"xxxxxxx"
+	"buyer_name":"xxxxxxx",
+	"redirecturl":"test/xxxxxx/xxxx"
 	
 }
 

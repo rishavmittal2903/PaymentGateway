@@ -18,7 +18,7 @@ router.post('/createPayment', (req, res) => {
     data.phone=req.body.phone;
     data.email=req.body.email;
     data.buyer_name=req.body.buyer_name;                
-    data.setRedirectUrl(process.env.REDIRECT_URL);
+    data.setRedirectUrl(req.body.redirecturl);
     Insta.createPayment(data, function(error, response) {
         if (error) {
           res.send(error);
