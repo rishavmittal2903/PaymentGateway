@@ -4,15 +4,14 @@ var Insta = require('instamojo-nodejs');
 const url=require('url');
 require('dotenv').config()
 Insta.setKeys(process.env.API_KEY, process.env.AUTH_KEY);
-console.log(process.env.API_KEY,process.env.AUTH_KEY)
-// if(process.env.DEV)
-// {
-//   Insta.isSandboxMode(true);
-// }
+console.log(process.env.API_KEY,process.env.AUTH_KEY,process.env.DEV)
+if(process.env.DEV)
+{
+  Insta.isSandboxMode(true);
+}
 //Create payment for user
 router.post('/createPayment', (req, res) => {
     var data = new Insta.PaymentData();
-     
     data.purpose = req.body.purpose;            
     data.amount = req.body.amount;  
     data.phone=req.body.phone;

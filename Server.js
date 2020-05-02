@@ -8,6 +8,6 @@ var port =process.env.PORT||8080;
 ;
 app.use(express.static(__dirname));
 app.use(express.json())
-app.use("/", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use('/paymentGateway',paymentGatewayRouter)
+app.use("/", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.listen(port, () => console.log('server started'))
