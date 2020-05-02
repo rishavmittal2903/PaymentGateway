@@ -92,7 +92,7 @@ API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxx
 AUTH_KEY=xxxxxxxxxxxxxxxxxx
 REDIRECT_URL={domain_namae}/PaymentGateway/Callback4
 
-### Deployment
+### DEMO
 
 This section has moved here: https://paymentgatewayapp.herokuapp.com/
 
